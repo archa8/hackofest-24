@@ -23,7 +23,11 @@ function App() {
       // read data and set list
       try{
         const data= await getDocs(usersCollectionRef);
-        console.log(data);
+        const filteredData = data.docs.map((doc => ({
+          ...doc.data(),
+          id: doc.id,
+        })));
+        setUserList(filteredData);
       } catch(err){
         console.error(err);
       }
@@ -58,6 +62,8 @@ function App() {
       </Router>
       <div classname="App">
         <Auth />
+        
+          
       </div>
     </>
   );
