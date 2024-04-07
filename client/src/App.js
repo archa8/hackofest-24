@@ -41,23 +41,24 @@ function App() {
   }
   return (
     <>
-    <Router>
-      <Chatbot />
-      <div>
-        <Navbar />
-        <Sidebar />
-        <Trends />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/" component={<SliderC />} />
-          {/*<Route path="/property/:id" component={PropertyPage} />*/}
-          <Route path="/test" element={<PropertyPage />} />
-        </Routes>
+      <Router>
+        <Chatbot />
+        <div>
+          <Navbar />
+          <Sidebar />
+          <Trends />
+          <Sell />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/" component={<SliderC />} />
+            {/*<Route path="/property/:id" component={PropertyPage} />*/}
+            <Route path="/test" element={<Sell />} />
+          </Routes>
+        </div>
+      </Router>
+      <div classname="App">
+        <Auth />
       </div>
-    </Router>
-    <div classname="App">
-      <Auth /> 
-    </div>
     </>
   );
 }
