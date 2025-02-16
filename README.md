@@ -166,10 +166,4 @@ This project is licensed under the **MIT License**.
 ---
 ```
 
-### ✨ What’s Improved?
-✅ **Formatted headers, icons, and markdown styling** for better readability.  
-✅ **Clear step-by-step instructions** for setup & deployment.  
-✅ **Table format** for the tech stack for better visual clarity.  
-✅ **Hyperlinks and images** for easier navigation.  
 
-Let me know if you need more modifications! 🚀🔥
